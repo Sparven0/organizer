@@ -14,142 +14,198 @@
     <title>Document</title>
   </head>
   <body>
-
-<div class="openerLower bg-white flex justify-center items-center"><h1 class="text-4xl mr-2">Welcome to ORGANIZER1.0</h1>
-    <h2>by 'wingren'</h2></div> 
-<div class="shower">
-    <div class="wrapper w-full flex flex-wrap">
-      <div class="w-96 h-full leftbar absolute mt-8">
-        <h1 class="text-center mt-5 text-xl">Inventory</h1>
-        <div class="w-full h-10 mt-5">
-          <h3 class="text-center text-2xl" id="item">
-            Cables <i class="fa-solid fa-caret-down" id="iconDown"></i>
-          </h3>
-        </div>
-        <div class="w-full h-10 mt-5">
-          <h3 class="text-center text-2xl" id="item2">
-            Accessories <i class="fa-solid fa-caret-down" id="iconDown2"></i>
-          </h3>
-        </div>
-        <div class="w-full h-10 mt-5">
-            <h3 class="text-center text-2xl" id="item3">
-               Hardware<i class="fa-solid fa-caret-down" id="iconDown3"></i>
-            </h3>
-          </div>
-        <div class="w-full h-10 mt-5">
-            <h3 class="text-center text-2xl" id="taskBtn">
-              View Tasks
-            </h3>
-          </div>
-
-        <div class="w-full bg-slate-200 itemBox text-center" id="itemBox">
-          <div class="itemBoxInnerDiv w-full">
-            <section class="nameSection">
-              <h3 class="name mt-2 bg-slate-600 text-white mb-2">Name:</h3>
-            </section>
-            <section class="qtySection">
-              <h3 class="qty mt-2 bg-slate-600 text-white mb-2">Qty:</h3>
-              
-            </section>
-          </div>
-          <section><h3 class="details mt-2 w-full bg-slate-600">Details</h3></section>
-        </div>
-        <div class="w-full bg-slate-200 itemBox2 text-center" id="itemBox2">
-          <div class="itemBoxInnerDiv2">
-            <section class="nameSection">
-              <h3 class="name mt-2 bg-slate-600 text-white">Name:</h3>
-              
-            </section>
-            <section class="qtySection">
-              <h3 class="qty mt-2 bg-slate-600 text-white">Qty:</h3>
-              
-            </section>
-          </div>
-          <section><h3 class="details mt-2 w-full bg-slate-600">Details</h3></section>
-      </div>
-      <div class="w-full bg-slate-200 itemBox3 text-center" id="itemBox3">
-        <div class="itemBoxInnerDiv3">
-          <section class="nameSection">
-            <h3 class="name mt-2 bg-slate-600 text-white">Name:</h3>
-            
-          </section>
-          <section class="qtySection">
-            <h3 class="qty mt-2 bg-slate-600 text-white">Qty:</h3>
-            </section>
-        </div>
-        <section><h3 class="details mt-2 w-full bg-slate-600">Details</h3></section>
+    <div class="openerLower bg-white flex justify-center items-center">
+      <h1 class="text-4xl mr-2">Welcome to ORGANIZER1.0</h1>
     </div>
-</div>
-      <div class="absolute w-full">
-        <h1 class="text-3xl text-center mx-auto bg-white">ORGANIZER 1.0 (beta)</h1>
-      </div>
-      <div class="flex items-center mx-auto">
-        <div class="hide">
-        <div class="agenda flex justify-evenly text-white">
-            <h1 class="absolute text-3xl mt-5">Current Task</h1>
-            <div class="flex flex-wrap justify-evenly w-56">
-          <div class="info">
-            <h2>Note:</h2>
-            <p>Your inventory can be found in the inventory-menu in the left bar.</p>
-            <br>
-            <p>The inventory balance is updated daily. If you are viewing it early in the day, it might still contain the balance of yesterday.</p>
+    <div class="shower">
+      <div class="wrapper w-full flex flex-wrap">
+        <div class="w-96 h-full leftbar absolute">
+          <h1 class="text-center text-xl">Inventory</h1>
+          <div class="w-full h-10 first">
+            <h3 class="text-center text-2xl mt-5" id="item">
+              Cables <i class="fa-solid fa-caret-down" id="iconDown"></i>
+            </h3>
           </div>
-          <div>
-            <h1>Description</h1>
-            <p class="description"></p>
+          <div class="w-full h-10 mt-5">
+            <h3 class="text-center text-2xl" id="item2">
+              Accessories <i class="fa-solid fa-caret-down" id="iconDown2"></i>
+            </h3>
+          </div>
+          <div class="w-full h-10 mt-5">
+            <h3 class="text-center text-2xl" id="item3">
+              Hardware<i class="fa-solid fa-caret-down" id="iconDown3"></i>
+            </h3>
+          </div>
+          <div class="w-full h-10 mt-5">
+            <h3 class="text-center text-2xl" id="taskBtn">View Tasks</h3>
+          </div>
+          <div class="mobileViewNotice flex flex-wrap w-44 bg-red-600 mx-auto">
+            <h1 class="text-center mb-2">Mobile-view is under construction</h1>
+          </div>
+       
+    
+        
+          <div class="w-full bg-slate-200 itemBox text-center" id="itemBox">
+            <div class="itemBoxInnerDiv w-full">
+              <section class="nameSection">
+                <h3 class="name mt-2 bg-slate-600 text-white mb-2">Name:</h3>
+              </section>
+              <section class="qtySection">
+                <h3 class="qty mt-2 bg-slate-600 text-white mb-2">Qty:</h3>
+              </section>
+            </div>
+            <section>
+              <h3 class="details mt-2 w-full bg-slate-600">Details</h3>
+            </section>
+          </div>
+          <div class="w-full bg-slate-200 itemBox2 text-center" id="itemBox2">
+            <div class="itemBoxInnerDiv2">
+              <section class="nameSection">
+                <h3 class="name mt-2 bg-slate-600 text-white">Name:</h3>
+              </section>
+              <section class="qtySection">
+                <h3 class="qty mt-2 bg-slate-600 text-white">Qty:</h3>
+              </section>
+            </div>
+            <section>
+              <h3 class="details mt-2 w-full bg-slate-600">Details</h3>
+            </section>
+          </div>
+          <div class="w-full bg-slate-200 itemBox3 text-center" id="itemBox3">
+            <div class="itemBoxInnerDiv3">
+              <section class="nameSection">
+                <h3 class="name mt-2 bg-slate-600 text-white">Name:</h3>
+              </section>
+              <section class="qtySection">
+                <h3 class="qty mt-2 bg-slate-600 text-white">Qty:</h3>
+              </section>
+            </div>
+            <section>
+              <h3 class="details mt-2 w-full bg-slate-600">Details</h3>
+            </section>
           </div>
         </div>
-          <div class="flip-card ml-20 mt-20">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <h1 class="text-white text-4xl mt-44 taskTitle">Task 1</h1>
+        <div class="flex items-center mx-auto">
+          <div class="hide">
+            <div class="agenda flex justify-evenly text-white">
+              <h1 class="absolute text-3xl mt-5">Current Task</h1>
+              <div class="flex flex-wrap justify-evenly w-56">
+                <div class="info">
+                  <h2>Note:</h2>
+                  <p>
+                    Your inventory can be found in the inventory-menu in the
+                    left bar.
+                  </p>
+                  <br />
+                  <p>
+                    The inventory balance is updated daily. If you are viewing
+                    it early in the day, it might still contain the balance of
+                    yesterday.
+                  </p>
+                </div>
+                <div>
+                  <h1>Description</h1>
+                  <p class="description"></p>
+                </div>
               </div>
-              <div class="flip-card-back">
-                <h1 class="text-2xl mt-2">Room -2 North</h1> 
-                <p>Organize <i class="fa-solid fa-check" style="color: #0ba300;"></i></p> 
-                <p>Inventory</p>
-                <p>Rinse</p>
-                <h1 class="text-9xl mt-10"><i class="fa-regular fa-building"></i></h1>
+              <div class="flip-card ml-20 mt-20">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1 class="text-white text-4xl mt-44 taskTitle">Task 1</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1 class="text-2xl mt-2">Room -2 North</h1>
+                    <p>
+                      Organize
+                      <i class="fa-solid fa-check" style="color: #0ba300"></i>
+                    </p>
+                    <p>Inventory</p>
+                    <p>Rinse</p>
+                    <h1 class="text-9xl mt-10">
+                      <i class="fa-regular fa-building"></i>
+                    </h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="detailsBox relative rounded text-xl p-2">
+            <button class="absolute flex text-2xl ml-2 mt-2 mb-20 closeDetails">
+              <i
+                class="fa-regular fa-rectangle-xmark"
+                style="color: #c50000"
+              ></i>
+            </button>
+            <div class="mx-auto items-center w-full flex justify-evenly">
+              <section class="nameSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 ml-10">Name:</h3>
+              </section>
+              <section class="qtySectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 mr-10">Quantity:</h3>
+              </section>
+              <section class="sizeSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10">Size:</h3>
+              </section>
+              <section class="locationSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 pr-5">Location:</h3>
+              </section>
+              <section class="typeSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 pr-5">Type:</h3>
+              </section>
+            </div>
+          </div>
+          <div class="detailsBox relative rounded text-xl p-2">
+            <button class="absolute flex text-2xl ml-2 mt-2 mb-20 closeDetails">
+              <i
+                class="fa-regular fa-rectangle-xmark"
+                style="color: #c50000"
+              ></i>
+            </button>
+            <div class="mx-auto items-center w-full flex justify-evenly">
+              <section class="nameSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 ml-10">Name:</h3>
+              </section>
+              <section class="qtySectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 mr-10">Quantity:</h3>
+              </section>
+              <section class="sizeSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10">Size:</h3>
+              </section>
+              <section class="locationSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 pr-5">Location:</h3>
+              </section>
+              <section class="typeSectionD w-56">
+                <h3 class="text-2xl mb-5 mt -10 pr-5">Type:</h3>
+              </section>
+            </div>
+          </div>
+          <div class=" detailsBox relative rounded text-xl p-2">
+            <button class="absolute flex text-2xl ml-2 mt-2 mb-20 closeDetails">
+              <i
+                class="fa-regular fa-rectangle-xmark"
+                style="color: #c50000"
+              ></i>
+            </button>
+            <div class="mx-auto items-center w-full flex justify-evenly">
+              <section class="nameSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 ml-10">Name:</h3>
+              </section>
+              <section class="qtySectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 mr-10">Quantity:</h3>
+              </section>
+              <section class="sizeSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10">Size:</h3>
+              </section>
+              <section class="locationSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 pr-5">Location:</h3>
+              </section>
+              <section class="typeSectionD w-56">
+                <h3 class="text-2xl mb-5 mt-10 pr-5">Type:</h3>
+              </section>
+            </div>
+          </div>
         </div>
-           </div>
-           <div class=" ml-20 detailsBox relative rounded text-xl p-2">
-            <button class="absolute flex text-2xl ml-2 mt-2 mb-20 closeDetails"><i class="fa-regular fa-rectangle-xmark" style="color: #c50000;"></i></button>
-            <div class="mx-auto items-center w-full flex">
-            <section class="nameSectionD"><h3 class="text-2xl mb-5 mt-10 ml-10">Name:</h3></section>
-            <section class="qtySectionD"><h3 class="text-2xl mb-5 mt-10 mr-10">Quantity:</h3></section>
-            <section class="sizeSectionD"><h3 class="text-2xl mb-5 mt-10">Size:</h3></section>
-            <section class="locationSectionD"><h3 class="text-2xl mb-5 mt-10 pr-5">Location:</h3></section>
-            <section class="typeSectionD"><h3 class="text-2xl mb-5 mt-10 pr-5">Type:</h3></section>
-    </div>
-           </div>
-    <div class=" ml-20 detailsBox relative rounded text-xl p-2">
-        <button class="absolute flex text-2xl ml-2 mt-2 mb-20 closeDetails"><i class="fa-regular fa-rectangle-xmark" style="color: #c50000;"></i></button>
-        <div class="mx-auto items-center w-full flex">
-        <section class="nameSectionD"><h3 class="text-2xl mb-5 mt-10 ml-10">Name:</h3></section>
-        <section class="qtySectionD"><h3 class="text-2xl mb-5 mt-10 mr-10">Quantity:</h3></section>
-        <section class="sizeSectionD"><h3 class="text-2xl mb-5 mt-10">Size:</h3></section>
-        <section class="locationSectionD"><h3 class="text-2xl mb-5 mt-10 pr-5">Location:</h3></section>
-        <section class="typeSectionD"><h3 class="text-2xl mb-5 mt-10 pr-5">Type:</h3></section>
-</div>
-    </div>
- <div class=" ml-20 detailsBox relative rounded text-xl p-2">
-        <button class="absolute flex text-2xl ml-2 mt-2 mb-20 closeDetails"><i class="fa-regular fa-rectangle-xmark" style="color: #c50000;"></i></button>
-        <div class="mx-auto items-center w-full flex">
-        <section class="nameSectionD"><h3 class="text-2xl mb-5 mt-10 ml-10">Name:</h3></section>
-        <section class="qtySectionD"><h3 class="text-2xl mb-5 mt-10 mr-10">Quantity:</h3></section>
-        <section class="sizeSectionD"><h3 class="text-2xl mb-5 mt-10">Size:</h3></section>
-        <section class="locationSectionD"><h3 class="text-2xl mb-5 mt-10 pr-5">Location:</h3></section>
-        <section class="typeSectionD"><h3 class="text-2xl mb-5 mt-10 pr-5">Type:</h3></section>
-</div>
-  
-           </div>
-          
-    </div>
       </div>
     </div>
-
   </body>
 </html>

@@ -267,6 +267,9 @@ async function getHardware() {
   }
 }
 
+
+
+
 getHardwareDetails();
 getAccessoryDetails();
 getCableDetails();

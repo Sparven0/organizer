@@ -6,6 +6,10 @@ background-color: #b1ceff6f;
 }
 .opened{
     animation: openerUpper 2500ms forwards;
+};
+
+.first{
+    padding-top: 15px
 }
 .openedUp{
     display: none;
@@ -239,22 +243,60 @@ background-color: #b1ceff6f;
  
   
 
-.detailsBox{
-  display: none;
-}  
+  .detailsBox{
+    display: none;
+  }
+  
 
 
 .showdetails{
-    display: flex;
+display: flex;
+width: 100vw;
+height: 100%;
     white-space: nowrap;
     backdrop-filter: blur(9px) saturate(180%);
     -webkit-backdrop-filter: blur(9px) saturate(180%);
     background-color: #ccccccb8;
     border: 1px solid rgba(255, 255, 255, 0.125);
+};
+
+.width{
+    width: 600px;
+    color: green
 }
 
-.footer{
-    z-index: -100
+
+
+
+
+
+
+
+
+@media  (max-width: 1300px) {
+    .mobileViewNotice{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .mobileViewNotice h1{
+        background-color: red;
+    }
 }
+
+@media  (min-width: 1300px) {
+    .mobileViewNotice{
+        display: none;
+        
+    }
+    .mobileViewNotice h1{
+        display: none;
+    }
+}
+
+.ItemBoxInnerDiv{
+    background-color: green;
+}
+
 
 
