@@ -1,0 +1,260 @@
+body{
+    background-image: url(/assets/bgORGANIZER.avif);
+    color: rgb(26, 26, 26);
+  font-family: Arial, Helvetica, sans-serif;
+background-color: #b1ceff6f;
+}
+.opened{
+    animation: openerUpper 2500ms forwards;
+}
+.openedUp{
+    display: none;
+}
+
+.startUpScreen{
+    display: none;
+}
+
+.openerLower{
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    z-index: 100;
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+
+#item, #item2, #item3{
+    cursor: pointer;
+}
+#item3:hover{
+    color: rgb(59, 129, 204);
+}
+#item2:hover{
+    color: rgb(59, 129, 204);
+}
+#item:hover{
+    color: rgb(59, 129, 204);
+} 
+.leftbar{
+    backdrop-filter: blur(9px) saturate(180%);
+    -webkit-backdrop-filter: blur(9px) saturate(180%);
+    background-color: #007cc08f;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.leftbar h1, h3{
+    color: white;
+}
+
+.fa-caret-down{
+    transform: rotate(-90deg);
+}
+.arrowDown{
+    transform: rotate(0deg);
+    transition: 200ms;
+}
+
+.itemBox, .itemBox2, .itemBox3{
+    display: none;
+}
+
+.show{
+    display: block;
+    margin: 0px;
+    animation: fader 100ms;
+}
+
+.itemBoxInnerDiv, .itemBoxInnerDiv2, .itemBoxInnerDiv3{
+  display: flex;
+    width: 100%;
+}
+
+
+
+@keyframes fader{
+    from {opacity: 0;
+    margin-top: -100px}
+    to {opacity: 100;
+    margin-top: 0px;}
+}
+
+@keyframes openerUpper{
+    from{opacity: 100;}
+    to{opacity: 0;}
+}
+
+
+.name{
+    font-weight: 700;
+}
+
+.qty{
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.qtySection{
+    width: 100%;
+    text-align: right;
+    
+}
+
+.qtySection p{
+    padding-right: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.qtySection2 p{
+    padding-right: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nameSection p{
+    width: 170px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+   
+}
+
+
+.qtySection2{
+    width: 100%;
+    text-align: right;
+}
+.nameSection2 p{
+    width: 170px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nameSection3 p{
+    width: 170px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.qtySection3{
+    width: 100%;
+    text-align: right;  
+}
+.qtySection3 p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 6px;
+}
+
+.hide{
+    display: none;
+}
+
+#taskBtn{
+    cursor: pointer;
+}
+
+.agenda{
+    width: 800px;
+    height: 600px;
+    margin-left: 200px;
+    backdrop-filter: blur(9px) saturate(180%);
+    -webkit-backdrop-filter: blur(9px) saturate(180%);
+    background-color: #00a6ff8f;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.agendaBox{
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+   .flip {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color:#143e5a;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .flip-card-back {
+    background-color: #143e5a;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+  }
+
+  .info{
+    width: 300px;
+    font-size: 12px;
+    margin-top: 80px;
+  }
+  .description{
+    width: 200px;
+    height:200px ;
+  }
+
+  .details, .details2, .details3{
+    color: rgb(104, 169, 255);
+    cursor: pointer;
+    padding-top:5px;
+    padding-bottom:5px ;
+  }
+  .details:hover, .details2:hover, .details3:hover{
+    background-color: rgb(171, 171, 171) ;
+  }
+
+
+ 
+  
+
+.detailsBox{
+  display: none;
+}  
+
+
+.showdetails{
+    display: flex;
+    white-space: nowrap;
+    backdrop-filter: blur(9px) saturate(180%);
+    -webkit-backdrop-filter: blur(9px) saturate(180%);
+    background-color: #ccccccb8;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.footer{
+    z-index: -100
+}
+
+
