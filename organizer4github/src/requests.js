@@ -4,6 +4,7 @@ const closeBtn = document.querySelectorAll('.close')
 const flipper = document.querySelector('.flipshower')
 const flipCard = document.querySelector('.flip-card');
 const whoops = document.querySelector('.whoops')
+const totalInventory = document.querySelector('.totalInventory');
 
 flipCard.addEventListener('click', ()=> {
   flipCard.classList.toggle('flip-cardFlip')
@@ -19,9 +20,17 @@ async function getData() {
   try {
     const response = await fetch(`${BASE_URL}`);
     const data = await response.json();
+
+
+    const totalQuantity = data.cables.reduce((sum, cable) => sum + Number(cable.quantity), 0);
+    const totalQuantity1 = data.hardware.reduce((sum, hardware) => sum + Number(hardware.quantity), 0);
+    const totalQuantity2 = data.accessories.reduce((sum, accessory) => sum + Number(accessory.quantity), 0);
+    
+    
+
+
     // change dataLength
     const dataLength = data.cables.length;
-
     for (let i = 0; i < dataLength; i++) {
       const dataName = data.cables[i].name; // change dataName
       const dataQty = data.cables[i].quantity;
@@ -34,6 +43,8 @@ async function getData() {
       let qty = document.createElement("p");
       let type = document.createElement("p");
       let row = document.createElement("div");
+      totalInventory.innerText = totalQuantity + totalQuantity1 +totalQuantity2;
+      
       
 
      
@@ -45,7 +56,6 @@ async function getData() {
       size.innerText = dataSize
       right[0].append(row);
       row.append( name, qty, size, type,  location);
-      console.log(data.cables[i]);
     }
   } catch (e) {
     console.log("ERROR", e);
