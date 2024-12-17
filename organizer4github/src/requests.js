@@ -4,7 +4,7 @@ const closeBtn = document.querySelectorAll('.close')
 const flipper = document.querySelector('.flipshower')
 const flipCard = document.querySelector('.flip-card');
 const whoops = document.querySelector('.whoops')
-const totalInventory = document.querySelector('.totalInventory');
+const totalInventory = document.querySelectorAll('.totalInventory');
 
 flipCard.addEventListener('click', ()=> {
   flipCard.classList.toggle('flip-cardFlip')
@@ -43,7 +43,8 @@ async function getData() {
       let qty = document.createElement("p");
       let type = document.createElement("p");
       let row = document.createElement("div");
-      totalInventory.innerText = totalQuantity + totalQuantity1 +totalQuantity2;
+      totalInventory[0].innerText = totalQuantity + totalQuantity1 +totalQuantity2;
+      totalInventory[1].innerText = totalQuantity + totalQuantity1 +totalQuantity2;
       
       
 
