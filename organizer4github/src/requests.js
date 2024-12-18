@@ -26,7 +26,7 @@ async function getData() {
     const totalQuantity = data.cables.reduce((sum, cable) => sum + Number(cable.quantity), 0);
     const totalQuantity1 = data.hardware.reduce((sum, hardware) => sum + Number(hardware.quantity), 0);
     const totalQuantity2 = data.accessories.reduce((sum, accessory) => sum + Number(accessory.quantity), 0);
-    const totalQuantity3 = data.cameras.reduce((sum, camera) => sum + Number(camera.quantity), 0);
+  
     
     
 
@@ -45,8 +45,8 @@ async function getData() {
       let qty = document.createElement("p");
       let type = document.createElement("p");
       let row = document.createElement("div");
-      totalInventory[0].innerText = totalQuantity + totalQuantity1 +totalQuantity2 + totalQuantity3;
-      totalInventory[1].innerText = totalQuantity + totalQuantity1 +totalQuantity2 +totalQuantity3;
+      totalInventory[0].innerText = totalQuantity + totalQuantity1 +totalQuantity2;
+      totalInventory[1].innerText = totalQuantity + totalQuantity1 +totalQuantity2;
       
       
 
