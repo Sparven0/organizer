@@ -5,7 +5,7 @@ const flipper = document.querySelector('.flipshower')
 const flipCard = document.querySelector('.flip-card');
 const whoops = document.querySelector('.whoops')
 const totalInventory = document.querySelectorAll('.totalInventory');
-const cameraSheet = document.querySelector('.camerasSheet')
+const cameraSheet = document.querySelectorAll('.camerasSheet')
 
 flipCard.addEventListener('click', ()=> {
   flipCard.classList.toggle('flip-cardFlip')
@@ -76,7 +76,7 @@ closeBtn[2].addEventListener('click',()=> {
 })
 // 
 
-
+// eventlisteners start
   const items = document.querySelectorAll('.item');
 items[0].addEventListener('click', () => {
  right[0].classList.toggle('remove')
@@ -93,6 +93,16 @@ items[1].addEventListener('click', () => {
 items[4].addEventListener('click', () => {
   whoops.classList.toggle('show')
 })
+
+const showcams = document.querySelectorAll('.showcams');
+showcams[0].addEventListener('click', ()=> {
+  cameraSheet[0].classList.toggle('showCams')
+})
+showcams[1].addEventListener('click', ()=> {
+  cameraSheet[1].classList.toggle('showCams')
+})
+
+// eventlisteners end
  
 
 async function getData1() {
@@ -176,19 +186,52 @@ async function getData2() {
 async function getCameras(){
   try{
   const response = await fetch(`${BASE_URL}`);
-  const data = response.json();
-
-  for(let i=0; i<data.camera.length; i++){
+  const data = await response.json();
+  for(let i=0; i<data.cameras.length; i++){
     let name = document.createElement('p');
-    name.innerText = data.cameras[i].name
-    cameraSheet.append(name)
+    let support = document.createElement('p');
+    let image = document.createElement('img');
+    image.src = data.cameras[i].image;
+let camDiv =document.createElement('div');
+    name.innerText = data.cameras[i].name;
+    support.innerText = data.cameras[i].supported
+    cameraSheet[0].append(camDiv);
+    camDiv.classList.add('cameraRow');
+    camDiv.append(image, name, support)
+    
+    
+    
   }
 } catch (e){
   console.log('ERROR', e)
 }
 }
 
+async function getCameras2(){
+  try{
+  const response = await fetch(`${BASE_URL}`);
+  const data = await response.json();
+  for(let i=0; i<data.cameras.length; i++){
+    let name = document.createElement('p');
+    let support = document.createElement('p');
+    let image = document.createElement('img');
+    image.src = data.cameras[i].image;
+let camDiv =document.createElement('div');
+    name.innerText = data.cameras[i].name;
+    support.innerText = data.cameras[i].supported
+    cameraSheet[1].append(camDiv);
+    camDiv.classList.add('cameraRow');
+    camDiv.append(image, name, support)
+    
+    
+    
+  }
+} catch (e){
+  console.log('ERROR', e)
+}
+}
 
+getCameras2()
 getCameras()
 getData2()
 getData1()

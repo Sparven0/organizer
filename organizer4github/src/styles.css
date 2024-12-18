@@ -7,6 +7,14 @@ body{
 }
 to {margin-left: 0%}}
 
+@keyframes slideDown {
+    from{
+        opacity: 0%;;
+    }to{
+        opacity: 100%;;
+    }
+}
+
 .inventoryDiv{
     width: 100%;
     text-align: center;
@@ -46,6 +54,7 @@ to {margin-left: 0%}}
         display: none;
     }
     
+    
     .row{
         font-size: 10px;
     }
@@ -58,6 +67,9 @@ to {margin-left: 0%}}
         background-color: rgb(221, 233, 255);
         color: white;
     }
+.lastUpdate33{
+    display: none;
+}
     .left h2{
         padding-left: 1rem;
         background-color: rgb(83, 83, 83);
@@ -71,6 +83,7 @@ to {margin-left: 0%}}
     .updateDiv{
         display: none;
     }
+   
 }
 
 .right{
@@ -109,6 +122,10 @@ to {margin-left: 0%}}
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cameraRows{
+    border-top: 1px solid black;
 }
 
 .lables{
@@ -225,6 +242,21 @@ to {margin-left: 0%}}
    flex-wrap: wrap;
    justify-content: end;
   }
+  
+  .lastUpdate4{
+    height: 7rem;
+    width: 100%;
+    background-color: #f59606;
+   font-size: 15px;
+   color: #ffffff;
+   margin-top: 5px;
+   border-radius: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: end;
+  }
 
    .updateDiv{
     width: 67%;
@@ -241,5 +273,29 @@ to {margin-left: 0%}}
     margin-left: 5px;
     margin-right: 1.25rem;
   }
-  
 
+ .camerasSheet{
+    display: none;
+ }
+ .showCams{
+    display: block;
+    animation: slideDown 500ms;
+ }
+
+  .cameraRow{
+    border-bottom: solid 2px rgb(165, 165, 165);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f7f7f7;
+  }
+  .cameraRow p{
+    width: 20%;
+    font-size: 12px;
+  }
+  .cameraRow img{
+    width: 40px;
+  }
+
+  
