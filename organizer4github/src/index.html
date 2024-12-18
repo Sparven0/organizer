@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="./output.css" />
     <script src="requests.js" type="module"></script>
     <script src="contents.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/c46614fcf6.js"
       crossorigin="anonymous"
@@ -18,99 +21,123 @@
   </head>
   <body>
     <div class="wrapper">
-<div class="left">
-  <div class="inventoryDiv"><h1 class=" text-2xl">Inventory1.0 beta</h1>
-  </div>
-  <div>
-<h2 class="item">Cables</h2>
-<h2 class="item">Hardware</h2>
-<h2 class="item">Accessories</h2>
-<h2 class="item">Tasks</h2>
-<h2 class="item">End Of Life</h2>
-</div>
-<div class="updateDiv">
-<div class="lastUpdate">
-  <div class="lastUpdateInner"><h1 class="text-4xl justify-start ml-2 mt-2 totalInventory"></h1></div>
-  <h1 class="ml-2 mt-2">Total inventory items</h1>
-</div>
-<div class="lastUpdate2">
-  <div class="lastUpdateInner"><h1 class="text-4xl justify-start ml-2 mt-2">Features</h1></div>
-  <h1 class="ml-2 mt-2">Next beta version</h1>
-</div>
-</div>
+      <div class="left">
+        <div class="inventoryDiv">
+          <h1 class="text-2xl">Inventory1.0 beta</h1>
+        </div>
+        <div>
+          <h2 class="item">Cables</h2>
+          <h2 class="item">Hardware</h2>
+          <h2 class="item">Accessories</h2>
+          <h2 class="item">Tasks</h2>
+          <h2 class="item">End Of Life</h2>
+        </div>
+        <div class="updateDiv">
+          <div class="lastUpdate">
+            <div class="lastUpdateInner">
+              <h1 class="text-4xl justify-start ml-2 mt-2 totalInventory"></h1>
+            </div>
+            <h1 class="ml-2 mt-2">Total inventory items</h1>
+          </div>
+          <div class="lastUpdate2">
+            <div class="lastUpdateInner">
+              <h1 class="text-4xl justify-start ml-2 mt-2">Features</h1>
+            </div>
+            <h1 class="ml-2 mt-2">Next beta version</h1>
+          </div>
+        </div>
+        <div class="lastUpdate3">
+          <div class="lastUpdateInner">
+            <h1 class="text-4xl justify-start ml-2 mt-2">Supported Cameras In Stock</h1>
+          </div>
+          <button class="mr-2 mt-5" style="color: rgb(15, 35, 255);">Show them</button>
+        </div>
+        <!-- SupportedCameras start -->
+        <div class="w-full ml-2 camerasSheet"><h1>Cameras in stock: </h1></div>
+        <!-- SupportedCameras end -->
+      </div>
+      <div class="updateDiv2">
+        <div class="lastUpdate">
+          <div class="lastUpdateInner">
+            <h1 class="text-4xl justify-start ml-2 mt-2 totalInventory"></h1>
+          </div>
+          <h1 class="ml-2 mt-2">Total inventory items</h1>
+        </div>
+        <div class="lastUpdate2">
+          <div class="lastUpdateInner">
+            <h1 class="text-4xl justify-start ml-2 mt-2">Features</h1>
+          </div>
+          <h1 class="ml-2 mt-2">Next beta version</h1>
+        </div>
+      </div>
+      
+      <!-- Right start -->
+      <div class="right">
+        <button class="close">Close</button>
+        <div class="lables w-full flex mt-5">
+          <h1>Name:</h1>
+          <h1>Quantity:</h1>
+          <h1>Size:</h1>
+          <h1>Type:</h1>
+          <h1>Location:</h1>
+        </div>
+      </div>
+      <!-- Right End -->
 
-</div>
-<div class="updateDiv2">
-  <div class="lastUpdate">
-    <div class="lastUpdateInner"><h1 class="text-4xl justify-start ml-2 mt-2 totalInventory"></h1></div>
-    <h1 class="ml-2 mt-2">Total inventory items</h1>
-  </div>
-  <div class="lastUpdate2">
-    <div class="lastUpdateInner"><h1 class="text-4xl justify-start ml-2 mt-2">Features</h1></div>
-    <h1 class="ml-2 mt-2">Next beta version</h1>
-  </div>
-  </div>
-<!-- Right start -->
-<div class="right">
-  <button class="close">Close</button>
-  <div class="lables w-full flex mt-5">
-    <h1 >Name:</h1>
-    <h1 >Quantity:</h1>
-    <h1 >Size:</h1>
-    <h1 >Type:</h1>
-    <h1>Location:</h1>
-  </div>
-</div>
-<!-- Right End -->
+      <!-- Right start -->
+      <div class="right">
+        <button class="close">Close</button>
+        <div class="lables w-full flex mt-5">
+          <h1>Name:</h1>
+          <h1>Quantity:</h1>
+          <h1>Size:</h1>
+          <h1>Type:</h1>
+          <h1>Location:</h1>
+        </div>
+      </div>
+      <!-- Right End -->
 
-<!-- Right start -->
-<div class="right">
-  <button class="close">Close</button>
-  <div class="lables w-full flex mt-5">
-    <h1 >Name:</h1>
-    <h1 >Quantity:</h1>
-    <h1 >Size:</h1>
-    <h1 >Type:</h1>
-    <h1>Location:</h1>
-  </div>
-</div>
-<!-- Right End -->
+      <!-- Right start -->
+      <div class="right">
+        <button class="close">Close</button>
+        <div class="lables w-full flex mt-5">
+          <h1>Name:</h1>
+          <h1>Quantity:</h1>
+          <h1>Size:</h1>
+          <h1>Type:</h1>
+          <h1>Location:</h1>
+        </div>
+      </div>
+      <!-- Right End -->
+      <!-- Flipcard Start -->
+      <div class="flipshower">
+        <div class="flip-card ml-10 mt-10">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Current task</h1>
+              <i
+                class="fa-solid fa-list-check flipicon"
+                style="color: #ffffff"
+              ></i>
+            </div>
+            <div class="flip-card-back">
+              <p class="mt-10">
+                The current task involves organizing, inventory the stock and
+                making sure stuff can be found with ease.
+              </p>
+              <p class="mt-10">
+                As seen, the task button is impressively unimpressive
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!-- Right start -->
-<div class="right">
-  <button class="close">Close</button>
-  <div class="lables w-full flex mt-5">
-    <h1 >Name:</h1>
-    <h1 >Quantity:</h1>
-    <h1 >Size:</h1>
-    <h1 >Type:</h1>
-    <h1>Location:</h1>
-  </div>
-</div>
-<!-- Right End -->
-<!-- Flipcard Start -->
-<div class="flipshower">
-<div class="flip-card ml-10 mt-10">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <h1>Current task</h1>
-      <i class="fa-solid fa-list-check flipicon" style="color: #ffffff;"></i>
+      <div class="w-full whoops">
+        <h1 class="text-4xl">Whoops! not done yet...</h1>
+      </div>
+
+      <!-- wrapperEnd -->
     </div>
-    <div class="flip-card-back">
-      <p class="mt-10">The current task involves organizing, inventory the stock and making sure stuff can be found with ease. </p>
-      <p class="mt-10">As seen, the task button is impressively unimpressive</p>
-    </div>
-  </div>
-</div>
-</div>
-
-
-<div class="w-full whoops"><h1 class="text-4xl">Whoops! not done yet...</h1></div>
-
-
-
-<!-- wrapperEnd -->
-    </div>
-  
   </body>
 </html>

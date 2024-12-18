@@ -79,6 +79,8 @@ to {margin-left: 0%}}
 .remove{
     display: block;
     animation: slider 500ms;
+    background-color: white;
+    position: absolute;
 
 }
 
@@ -209,6 +211,21 @@ to {margin-left: 0%}}
    display: flex;
    flex-wrap: wrap;
   }
+  .lastUpdate3{
+    height: 7rem;
+    width: 100%;
+    background-color: #f59606;
+   font-size: 15px;
+   color: #ffffff;
+   margin-top: 5px;
+   border-radius: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: end;
+  }
+
    .updateDiv{
     width: 67%;
    }
@@ -219,5 +236,10 @@ to {margin-left: 0%}}
     display: flex;
   }
 
+  .supportedCameras{
+    background-color: #e14700;
+    margin-left: 5px;
+    margin-right: 1.25rem;
+  }
   
 

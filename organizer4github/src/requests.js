@@ -5,6 +5,7 @@ const flipper = document.querySelector('.flipshower')
 const flipCard = document.querySelector('.flip-card');
 const whoops = document.querySelector('.whoops')
 const totalInventory = document.querySelectorAll('.totalInventory');
+const cameraSheet = document.querySelector('.camerasSheet')
 
 flipCard.addEventListener('click', ()=> {
   flipCard.classList.toggle('flip-cardFlip')
@@ -170,6 +171,25 @@ async function getData2() {
   }
 }
 
+// Displaying cameras
+
+async function getCameras(){
+  try{
+  const response = await fetch(`${BASE_URL}`);
+  const data = response.json();
+
+  for(let i=0; i<data.camera.length; i++){
+    let name = document.createElement('p');
+    name.innerText = data.cameras[i].name
+    cameraSheet.append(name)
+  }
+} catch (e){
+  console.log('ERROR', e)
+}
+}
+
+
+getCameras()
 getData2()
 getData1()
 getData()
