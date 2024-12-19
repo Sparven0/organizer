@@ -91,9 +91,7 @@ items[1].addEventListener('click', () => {
  items[3].addEventListener('click', () => {
   flipper.classList.toggle('flipshower')
 })
-items[4].addEventListener('click', () => {
-  whoops.classList.toggle('show')
-})
+
 
 const showcams = document.querySelectorAll('.showcams');
 showcams[0].addEventListener('click', ()=> {
