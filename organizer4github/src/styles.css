@@ -229,17 +229,18 @@ to {margin-left: 0%}}
   }
   .lastUpdate3{
     height: 7rem;
-    width: 100%;
+    width: 97vw;
     background-color: #f59606;
    font-size: 15px;
    color: #ffffff;
    margin-top: 5px;
    border-radius: 5px;
    margin-left: 5px;
-   margin-right: 5px;
+   margin-right: 15px;
    display: flex;
    flex-wrap: wrap;
    justify-content: end;
+   
   }
   
   .lastUpdate4{
